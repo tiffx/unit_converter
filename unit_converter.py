@@ -2,7 +2,7 @@ from tkinter import *
 
 window = Tk()
 
-def km_to_miles():
+def converter():
     g = float(e1_value.get())*1000
     lb = float(e1_value.get())*2.20462
     oz = float(e1_value.get())*35.274
@@ -25,7 +25,7 @@ lb_label.grid(row=1,column=1)
 oz_label = Label(window,text="oz")
 oz_label.grid(row=1,column=2)
 
-b1 = Button(window,text="Convert",command=km_to_miles)
+b1 = Button(window,text="Convert",command=converter)
 b1.grid(row=0,column=2)
 
 e1_value=StringVar()
